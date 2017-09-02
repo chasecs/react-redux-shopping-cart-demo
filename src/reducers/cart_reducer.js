@@ -20,7 +20,7 @@ const addQuantity = (state = initialState.quantityById, productId) => {
 }
 
 
-const cart = (state = initialState, action) => {
+const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.ADD_TO_CART:
       return Object.assign({}, state, {
@@ -34,4 +34,4 @@ const cart = (state = initialState, action) => {
   }
 }
 
-export default cart
+export default cartReducer

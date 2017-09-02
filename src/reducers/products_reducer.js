@@ -9,7 +9,7 @@ const decreaseInventory = (product) => {
   }
 }
 
-const products = (state = initialState, action) => {
+const productsReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.SHOW_INVENTORY:
       return Object.assign({}, action.products)
@@ -24,4 +24,4 @@ const products = (state = initialState, action) => {
   }
 }
 
-export default products
+export default productsReducer
